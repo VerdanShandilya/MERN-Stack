@@ -1,0 +1,74 @@
+/* @import "tailwindcss"; */
+:root{
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+body{
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+nav{
+  background: #fff;
+}
+nav .container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a{
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.error {
+  border: 1px solid var(--error);
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination__link {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination__link--active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.pagination__link--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
